@@ -11,11 +11,9 @@ const TabBar = (props) => {
     const handleClick = (item) => {
       props.setCurrentEditor(item)
       props.setSelected(item)
-      console.log('tab bar handle, current selected is ' + props.selected)
     }
   
     const handleClose = (item) => {
-      console.log("close clicked on " + item)
       for (let i = 0; i < props.currentTabs.length;  i++) {
         if (props.currentTabs[i] == item) {
           props.currentTabs.splice(i, 1)

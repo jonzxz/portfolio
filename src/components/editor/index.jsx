@@ -8,7 +8,6 @@ import Readme from '../readme'
 const Editor = (props) => {
 
   function switchPage() {
-    console.log('IN SWITCH ' + props.currentEditor.slice(0, -3))
     switch(props.currentEditor.slice(0, -3)) {
       case 'JobExperience':
         return <JobExperience/>
