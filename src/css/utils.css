@@ -1,0 +1,22 @@
+.unselectable {
+  -webkit-user-select: none; /* Safari */        
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
+}
+
+button {
+  background-color: #1e2326;
+  border: none;
+  color: #bbc3c5;
+  font-size: medium;
+  font-family:Consolas, 'Courier New', monospace;
+  padding-left: 5%;
+  padding-top: 2%;
+  cursor: pointer
+}
+
+@font-face {
+  font-family: 'JetbrainsMono';
+  src: local('JetBrainsMono'), url(../assets/fonts/JetBrainsMono-Regular.ttf) format('truetype');
+}

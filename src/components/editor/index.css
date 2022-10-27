@@ -1,0 +1,12 @@
+.editor-background {
+  background-color: #23272e;
+}
+
+.editor-pos {
+  position: fixed;
+  height: 100%;
+  width: 78%;
+  margin-left: 22%;
+  top: 0px;
+  left: 0px;
+}
