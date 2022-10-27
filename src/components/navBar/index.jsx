@@ -5,16 +5,20 @@ import '../../css/utils.css'
 const NavigationBar = (props) => {
   
   const populateNavBar = () => {
-    const items = ["JobExperience", "ExecutiveSummary", "Education"];
-
+    let items = props.items
+    
     const handleClick = (item) => {
       props.setCurrentEditor(item)
+      props.setSelected(item)
+      if (!((Array.from(props.currentTabs)).includes(item))) {
+        props.currentTabs.push(item)
+      }
     }
     
     return (
       <div>
         {items.map((item, k) => (
-          <NavigationItem key={k} title={item} handleClick={ () => handleClick(item)}/>
+          <NavigationItem key={k} title={item} handleClick={ () => handleClick(item)} selected={props.selected}/>
         ))}
       </div>
     )

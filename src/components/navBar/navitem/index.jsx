@@ -1,8 +1,10 @@
+import  './index.css'
+
 const NavigationItem = (props) => {
 
   return (
     <div className="navitem">
-      <button onClick={props.handleClick}>{props.title}</button>
+      <button className={props.selected == props.title ? "navbutton selected" : "navbutton"} onClick={props.handleClick}>{props.title}</button>
     </div>
   )
 }

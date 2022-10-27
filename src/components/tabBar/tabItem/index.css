@@ -1,0 +1,24 @@
+.tabitem {
+  height: auto;
+  width: 230px;
+  display: flex;
+  padding-top: 0.4%;
+}
+
+.tabButton {
+  width: 100%;
+  height: 100%;
+  padding-bottom: 2%;
+}
+
+.tabButton:hover {
+  background: #313539;
+}
+
+.tabButton:focus {
+  background: #313539;
+}
+
+.selectedButton {
+  border-bottom: 1px solid white;
+}

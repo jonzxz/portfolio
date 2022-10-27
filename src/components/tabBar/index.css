@@ -1,0 +1,24 @@
+.tabbar-background {
+  background-color: #1e2326;
+}
+
+.tabbar-pos {
+  position: fixed;
+  height: 4.2%;
+  width:78%;
+  margin-left:22%;
+  top: 0px;
+  left: 0px;
+  z-index: 2;
+}
+
+.tabbar-inner {
+  background-color: #1e2326;
+  display: flex;
+  position: fixed;
+  height: auto;
+  width:78%;
+  margin-left:22%;
+  top: 0px;
+  left: 0px;
+}

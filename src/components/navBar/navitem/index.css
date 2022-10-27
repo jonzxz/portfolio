@@ -1,0 +1,17 @@
+.navbutton {
+  width: 100%;
+  text-align: left;
+  padding-bottom: 1%;
+}
+
+.navbutton:hover {
+  background: #313539;
+}
+
+.navbutton:focus {
+  background: #313539
+}
+
+.selected {
+  background: #313539;
+}

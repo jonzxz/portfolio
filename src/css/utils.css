@@ -16,6 +16,22 @@ button {
   cursor: pointer
 }
 
+table, th, td {
+  border: 1px solid #bbc3c5;
+  border-collapse: collapse;
+  border-style: dotted;
+}
+
+.md {
+  color: #bbc3c5;
+  font-family:'Helvetica Neue', sans-serif;
+}
+
+a {
+  color: #bbc3c5;
+}
+
+
 @font-face {
   font-family: 'JetbrainsMono';
   src: local('JetBrainsMono'), url(../assets/fonts/JetBrainsMono-Regular.ttf) format('truetype');

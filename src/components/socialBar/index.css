@@ -1,0 +1,11 @@
+.socialbar-background {
+  background-color: #23272e;
+}
+
+.socialbar-pos {
+  position: fixed;
+  height: 100%;
+  width:3%;
+  top: 0px;
+  left: 0px;
+}

@@ -1,22 +1,27 @@
 import './index.css'
 import JobExperience from '../jobExperience'
-import Education from '../education'
+import Qualifications from '../qualifications'
 import ExecutiveSummary from '../executiveSummary'
+import Contact from '../contact'
+import Readme from '../readme'
 
 const Editor = (props) => {
 
   function switchPage() {
-    console.log('IN SWITCH ' + props.currentEditor)
-    switch(props.currentEditor) {
+    console.log('IN SWITCH ' + props.currentEditor.slice(0, -3))
+    switch(props.currentEditor.slice(0, -3)) {
       case 'JobExperience':
         return <JobExperience/>
       case 'ExecutiveSummary':
         return <ExecutiveSummary/>
-      case 'Education':
-        return <Education/>
+      case 'Qualifications':
+        return <Qualifications/>
+      case 'Contact':
+        return <Contact/>
+      case 'README':
+        return  <Readme/>
       default:
-        // TODO: what to put here
-        return <JobExperience/>
+        return  <Readme/>
     }
   }
 

@@ -1,0 +1,10 @@
+.icon {
+  width: 55%;
+  padding: 25%;
+  filter: invert(35%);
+  border-radius: 30%;
+}
+
+.icon:hover {
+  background: #b8caee;
+}

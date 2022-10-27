@@ -10,3 +10,19 @@
   top: 0px;
   left: 0px;
 }
+
+.navbar-headers {
+  color: #bbc3c5;
+  font-family:Consolas, 'Courier New', monospace;
+  padding-left: 5%;
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+
+.navbar-profile {
+  font-weight: bold;
+  font-size:small;
+  background-color: #23272e;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}

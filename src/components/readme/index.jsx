@@ -1,14 +1,14 @@
 import ReactMarkdown from "react-markdown";
 import gfm from 'remark-gfm';
 import { useEffect, useState } from 'react';
-import ExecutiveSummaryFile from './ExecutiveSummary.md'
+import ReadmeFile from './README.md'
 import '../../css/utils.css'
 
-const ExecutiveSummary = () => {
+const Readme = () => {
   const [content, setContent] =  useState("")
 
   useEffect(() => {
-    fetch(ExecutiveSummaryFile)
+    fetch(ReadmeFile)
       .then((res) => res.text())
       .then((text) => setContent(text));
   }, []);
@@ -20,4 +20,4 @@ const ExecutiveSummary = () => {
   )
 }
 
-export default ExecutiveSummary;
+export default Readme;
