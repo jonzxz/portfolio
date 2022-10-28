@@ -3,6 +3,7 @@ import gfm from 'remark-gfm';
 import { useEffect, useState } from 'react';
 import ReadmeFile from './README.md'
 import '../../css/utils.css'
+import rehypeRaw from "rehype-raw";
 
 const Readme = () => {
   const [content, setContent] =  useState("")
@@ -15,7 +16,7 @@ const Readme = () => {
 
   return (
     <div className="md">
-      <ReactMarkdown remarkPlugins={[gfm]} children={content}/>
+      <ReactMarkdown remarkPlugins={[gfm]} children={content} rehypePlugins={[rehypeRaw]}/>
     </div>
   )
 }

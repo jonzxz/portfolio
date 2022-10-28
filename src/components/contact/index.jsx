@@ -3,6 +3,7 @@ import gfm from 'remark-gfm';
 import { useEffect, useState } from 'react';
 import ContactFile from './Contact.md'
 import '../../css/utils.css'
+import rehypeRaw from "rehype-raw";
 
 const Contact = () => {
   const [content, setContent] =  useState("")
@@ -15,7 +16,7 @@ const Contact = () => {
 
   return (
     <div className="md">
-      <ReactMarkdown remarkPlugins={[gfm]} children={content} linkTarget={"_blank"}/>
+      <ReactMarkdown remarkPlugins={[gfm]} children={content} linkTarget={"_blank"} rehypePlugins={[rehypeRaw]}/>
     </div>
   )
 }

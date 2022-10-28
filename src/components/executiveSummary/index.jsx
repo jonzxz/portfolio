@@ -3,6 +3,7 @@ import gfm from 'remark-gfm';
 import { useEffect, useState } from 'react';
 import ExecutiveSummaryFile from './ExecutiveSummary.md'
 import '../../css/utils.css'
+import rehypeRaw from "rehype-raw";
 
 const ExecutiveSummary = () => {
   const [content, setContent] =  useState("")
@@ -15,7 +16,7 @@ const ExecutiveSummary = () => {
 
   return (
     <div className="md">
-      <ReactMarkdown remarkPlugins={[gfm]} children={content}/>
+      <ReactMarkdown remarkPlugins={[gfm]} children={content} rehypePlugins={[rehypeRaw]}/>
     </div>
   )
 }

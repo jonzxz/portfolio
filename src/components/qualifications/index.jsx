@@ -3,6 +3,7 @@ import gfm from 'remark-gfm';
 import { useEffect, useState } from 'react';
 import QualificationsFile from './Qualifications.md'
 import '../../css/utils.css'
+import rehypeRaw from "rehype-raw";
 
 const Qualifications = () => {
   const [content, setContent] =  useState("")
@@ -15,7 +16,7 @@ const Qualifications = () => {
 
   return (
     <div className="md">
-      <ReactMarkdown remarkPlugins={[gfm]} children={content} linkTarget={"_blank"}/>
+      <ReactMarkdown remarkPlugins={[gfm]} children={content} linkTarget={"_blank"} rehypePlugins={[rehypeRaw]}/>
     </div>
   )
 }
