@@ -1,5 +1,5 @@
 module "bucket" {
   source          = "../module/s3"
-  bucket_name     = "www.jonathankerk.com"
-  redirected_host = "jonathankerk.com"
+  bucket_name     = var.bucket_name
+  redirected_host = var.redirected_host
 }
