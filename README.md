@@ -1,70 +1,44 @@
-# Getting Started with Create React App
+# Portfolio Site
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+---
 
-## Available Scripts
+This repository contains the code for my [portfolio site](https://jonathankerk.com)
 
-In the project directory, you can run:
+The frontend is built with pure React v18, and the code is hosted on S3 buckets in AWS. 
 
-### `npm start`
+The frontend code was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Frontend
 
-### `npm test`
+Fairly simple React application that attempts to replicate the views of classic text editors, eg. VSC in dark mode.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+The frontend is pretty barebones, it's simply a navigation bar/tab that allows you to go to different component/pages.
 
-### `npm run build`
+Some potential future improvements including:
+  - Vertical scroll map instead of invisible scroll bar
+  - Colored or stylized MD in each page
+  - Drag and drop tabs to support split panels
+  - Have an actual `error.html` that can elegantly handle bad requests instead of rerouting to `index.html`
+  - Actually fix mobile scaling, something's whack here
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Hosting
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Code is hosted on 2 AWS S3 buckets with static site hosting enabled. Code is packed with `npm run build` and uploaded to S3.
 
-### `npm run eject`
+The Terraform version used here is `v1.3.3`, and the AWS Provider is pinned to `4.36.1`.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Terraform code can be found in `terraform/*`
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+A base module was written `terraform/module/s3` as somewhat a sort of customized base module for myself, for the sake of website hosting.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+The module has a switch flag that determines if the bucket created is going to be a "hosted bucket" (ie. containing built package) or "redirect bucket" (redirects traffic to the hosted bucket).
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+One of the bucket `jonathankerk.com` acts as the hosted bucket, while `www.jonathankerk.com` redirects all requests  to `jonathankerk.com`.
 
-## Learn More
+The buckets has a bucket policy to only allow `s3:GetObject` from all Cloudflare IP addresses which can be found [here](https://www.cloudflare.com/ips-v4). The domain names are proxied through Cloudflare with HTTPS redirects and we'd want to avoid anyone accessing the bucket endpoints directly.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+There's also a hack of some sort using `aws_s3_object` and a `for_each` loop pointing to a `fileset` directory. This allows Terraform `apply` to actually upload the entire build from `npm run build` to the bucket at one, instead of using `provisioners`, raw AWS CLI or individual `aws_s3_object` for each file. 
