@@ -14,12 +14,12 @@ resource "aws_s3_bucket_versioning" "versioning" {
 }
 
 resource "aws_s3_bucket_website_configuration" "redirection" {
-  count = local.redirect_bucket
+  count  = local.redirect_bucket
   bucket = aws_s3_bucket.bucket.id
 
   redirect_all_requests_to {
     host_name = var.redirected_host
-    protocol = "https"
+    protocol  = "https"
   }
 }
 
@@ -66,7 +66,7 @@ resource "aws_s3_bucket_server_side_encryption_configuration" "sse_config" {
 
   rule {
     apply_server_side_encryption_by_default {
-      sse_algorithm     = "AES256"
+      sse_algorithm = "AES256"
     }
   }
 }
@@ -74,7 +74,7 @@ resource "aws_s3_bucket_server_side_encryption_configuration" "sse_config" {
 resource "aws_s3_bucket_public_access_block" "public_access_block" {
   bucket = aws_s3_bucket.bucket.id
 
-  for_each = var.public_access_config
+  for_each                = var.public_access_config
   block_public_acls       = each.value.block_public_acls
   block_public_policy     = each.value.block_public_policy
   ignore_public_acls      = each.value.ignore_public_acls
@@ -98,14 +98,14 @@ data "aws_iam_policy_document" "cloudflare_dns" {
   statement {
     sid = "CloudflareAllowGetObject"
     principals {
-      type = "AWS"
+      type        = "AWS"
       identifiers = ["*"]
     }
     actions = [
       "s3:GetObject"
     ]
     condition {
-      test = "IpAddress"
+      test     = "IpAddress"
       variable = "aws:sourceIp"
       values = [
         "173.245.48.0/20",
@@ -135,9 +135,9 @@ data "aws_iam_policy_document" "cloudflare_dns" {
 resource "aws_s3_object" "static_files" {
   for_each = local.host_bucket > 0 ? fileset("${path.module}/../../../", "build/**/*") : []
 
-  bucket = aws_s3_bucket.bucket.id
+  bucket             = aws_s3_bucket.bucket.id
   bucket_key_enabled = true
-  key = replace(each.value, "build/", "")
-  source = "${path.module}/../../../${each.value}"
-  content_type = lookup(local.mime_types, split(".", each.value)[length(split(".", each.value)) -1])
-  }
+  key                = replace(each.value, "build/", "")
+  source             = "${path.module}/../../../${each.value}"
+  content_type       = lookup(local.mime_types, split(".", each.value)[length(split(".", each.value)) - 1])
+}

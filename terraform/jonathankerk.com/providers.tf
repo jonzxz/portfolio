@@ -1,11 +1,11 @@
 terraform {
   backend "s3" {
     bucket = "jonny-multi-purpose-bucket"
-    key = "terraform/jonathankerk.com/terraform.tfstate"
+    key    = "terraform/jonathankerk.com/terraform.tfstate"
   }
   required_providers {
     aws = {
-      source = "hashicorp/aws"
+      source  = "hashicorp/aws"
       version = "~>4.36.1"
     }
   }
