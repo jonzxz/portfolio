@@ -6,6 +6,7 @@
   position: fixed;
   height: 100%;
   width:19%;
+  word-wrap: break-word;
   margin-left:3%;
   top: 0px;
   left: 0px;
