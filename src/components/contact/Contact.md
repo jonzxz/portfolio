@@ -2,7 +2,7 @@
 
 ---
 
-### [<clrbl>LinkedIn](https://linked.com/in/jonathan-kerk)
+### [<clrbl>LinkedIn](https://linkedin.com/in/jonathan-kerk)
 
 ### [<clrog>GitHub](https://github.com/jonzxz)
 
