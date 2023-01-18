@@ -1,7 +1,11 @@
 # <clrgn>JobExperience.md</clrgn>
 ---
 
-## DevOps Engineer | *Jul 2022 – Present*
+## DevOps Engineer | *Jan 2023 - Present*
+### <clrcy>GovTech Singapore, Government Digital Services</clrcy>
+-	Government Paid Leave System (GPLS)
+
+## DevOps Engineer | *Jul 2022 – Jan 2023*
 ### <clrrd>S&P Global, Market Intelligence</clrrd>
 -	Leading infrastructure team, hosting monthly infrastructure reviews and leading discussions for improvements and optimizations
 
