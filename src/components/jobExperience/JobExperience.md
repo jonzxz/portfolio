@@ -15,6 +15,8 @@
 
 - Conducted hiring interviews for potential candidates
 
+----
+
 ## DevOps Engineer | *Jul 2022 – Jan 2023*
 ### <clrrd>S&P Global, Market Intelligence</clrrd>
 -	Leading infrastructure team, hosting monthly infrastructure reviews and leading discussions for improvements and optimizations
