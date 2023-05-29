@@ -3,7 +3,17 @@
 
 ## DevOps Engineer | *Jan 2023 - Present*
 ### <clrcy>GovTech Singapore, Government Digital Services</clrcy>
--	Government Paid Leave System (GPLS)
+-	Part of a DevOps team of 3 providing Business-as-usual (BAU) DevOps Support to the Government Paid Leave Schemes (GPLS) Portal
+
+- Spearheading technology stack migration from Atlassian Bitbucket and Bamboo to GitLab.
+
+- Designed, implemented and provided technical documentation for over <clrgn>30</clrgn> reusable GitLab job templates for jobs across all stages
+
+- Designed and implemented CI/CD pipelines for JavaScript (Yarn) and Kotlin (Gradle) based microservices from source to deploy.
+
+- Created CI/CD automation pipelines based on existing Ansible playbooks, reducing manual developer work. 
+
+- Conducted hiring interviews for potential candidates
 
 ## DevOps Engineer | *Jul 2022 – Jan 2023*
 ### <clrrd>S&P Global, Market Intelligence</clrrd>
@@ -17,13 +27,15 @@
 
 -	Solutions design and implementation of cross region service for multiple AWS based products, enabling trade reporting to Hong Kong Trade Repository (HKTR)
 
--	Implementing reusable <clrmg>`Terraform`</clrmg> modules for various AWS resources such as `IAM Group`, `Users`, `Roles`, `Auto Scaling Groups`, `Elastic File System`, `Transfer`
+-	Implementing reusable `Terraform` modules for various AWS resources such as `IAM Group`, `Users`, `Roles`, `Auto Scaling Groups`, `Elastic File System`, `Transfer`
 
--	<clrgn>Technical documentation</clrgn> for existing and new infrastructure stack
+-	Technical documentation for existing and new infrastructure stack
 
 -	Engagement with external vendors and corporate Cloud team on new infrastructure building blocks
 
 -	Provided technical rectifications for on-premise client, including `NGINX` reverse-proxy configurations and security related flags
+
+- Conducted hiring interviews for potential candidates
 
 ----
 
@@ -35,11 +47,11 @@
 
 -	Participated in Agile based development cycles, acting as Sprint lead for development sprints on rotation basis
 
--	Part of infrastructure team creating and enhancing existing AWS resources using <clrmg>`Terraform`</clrmg> and AWS CLI
+-	Part of infrastructure team creating and enhancing existing AWS resources using `Terraform` and AWS CLI
 
 -	Cost analysis of cloud billing to reduce monthly overheads, resulting in 30% cost savings in AWS operational costs by rightsizing and optimizations
 
--	Redesigning of AWS `Security Groups` using <clrmg>`Terraform`</clrmg> modules to introduce security segregation of outbound connectivity
+-	Redesigning of AWS `Security Groups` using `Terraform` modules to introduce security segregation of outbound connectivity
 
 -	Executing estate-wide deployments in for over 80 servers in UAT and Production environments
 
@@ -47,13 +59,13 @@
 
 -	Created AWS `Session Manager` (SSM) automation for refreshing AWS `Simple Email Service` (SES) SMTP credentials for servers utilizing Postfix relay design
 
--	Designed and implemented weekly scheduled pipeline to build custom `EC2 AMIs` for applications using Gitlab CI and <clrmg>`Hashicorp Packer`</clrmg>
+-	Designed and implemented weekly scheduled pipeline to build custom `EC2 AMIs` for applications using Gitlab CI and `Hashicorp Packer`
 
 -	Developed automation in `Lambda` to identify and update AWS `Auto Scaling Groups` with updated `AMIs` built by scheduled pipelines
 
 -	Responsible for Availability-Zone scoped Disaster Recovery exercise in AWS, including drafting of proposals, execution and post mortem reports
 
--	Authoring <clrgn>technical documentations</clrgn> for Day 2 operations for infrastructure resources in product
+-	Authoring technical documentations for Day 2 operations for infrastructure resources in product
 
 ---
 
@@ -77,9 +89,9 @@
 
 -	Providing technical consultancy and troubleshooting for on-premise systems
 
--	Developed system report generation automation initiative in `VBScript` and `Microsoft Batch`, resulting in reduction of maintenance time cost by <clrrd>90%</clrrd> for legacy Windows systems
+-	Developed system report generation automation initiative in `VBScript` and `Microsoft Batch`, resulting in reduction of maintenance time cost by <clrgn>90%</clrgn> for legacy Windows systems
 
--	Developed `Python` GUI application for customizing client-based application on Windows based machines, reducing time taken for client configurations by <clrrd>90%</clrrd> for Windows 7 systems
+-	Developed `Python` GUI application for customizing client-based application on Windows based machines, reducing time taken for client configurations by <clrgn>90%</clrgn> for Windows 7 systems
 
 -	Creation of golden Windows 7 images for client machines and estate-wide deployments to 700 laptops over local network
 

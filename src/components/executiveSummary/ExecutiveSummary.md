@@ -3,17 +3,17 @@
 ---
 
 ## Executive Summary
-- DevOps / Infrastructure Engineer with focus on AWS cloud infrastructure, responsible for building new, and optimizing existing cloud resources with <clrog>`Terraform`</clrog>, <clrgn>`Git`</clrgn> and <clrgn>`Gitlab`</clrgn></span>. 
+- DevOps Engineer with focus on AWS cloud infrastructure and GitLab, responsible for building new, and optimizing existing cloud resources with <clrog>`Terraform/Terragrunt` and implementing CICD pipelines in <clrog>`GitLab`</clrog></span>. 
 
-- Sole contributor in managing security compliances, operational costs / budgeting, Business-As-Usual (BAU) operations, resource planning / allocation of <clrgn>4 AWS accounts</clrgn>.
+- Currently an individual contributor working on AWS, Ansible, GitLab CI Terraform/Terragrunt technology stacks.
 
-- Experienced in <clrrd>Level 2 Support</clrrd>, <clrgn>Agile development cycles</clrgn> and <clrgn>sprint leading</clrgn>
+- Experience in Scrum and Kanban Agile methodologies, Cloud Security compliances and Cloud operational budgeting for multiple AWS accounts. Also experienced in GitLab CI/CD Pipeline and AWS designs.
 
-- Practical scripting knowledge in <clrog>`Python`</clrog>, <clrog>`Bash`</clrog> and development experience in <clrog>`Java 8`</clrog>.
+- Practical scripting knowledge in <clrog>`Python`</clrog>, <clrog>`Bash`</clrog> and past development experience in <clrog>`Java 8`</clrog>.
 
-- Proficient in <clrmg>Windows and Linux</clrmg> server administration.
+- Proficient in <clrmg>Linux</clrmg> server administration. <clrbl>#iusearchbtw</clrbl>
 
-- Freelance experience as <clrog>`Microsoft 365`</clrog> and <clrbl>`Google Workspace`</clrbl> (previously GSuite) setup and administration for small businesses.
+- Freelance experience as `Microsoft 365` and `Google Workspace` (previously GSuite) setup and administration for small businesses.
 
 
 <style>
