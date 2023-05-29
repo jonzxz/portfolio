@@ -1,5 +1,6 @@
 module "bucket" {
-  source          = "../module/s3"
+  #source         = "github.com/jonzxz/jonnywritesterraform/bucket-static-site"
+  source          = "../../../jonnywritesterraform/bucket-static-site"
   bucket_name     = var.bucket_name
   redirected_host = var.redirected_host
 }
