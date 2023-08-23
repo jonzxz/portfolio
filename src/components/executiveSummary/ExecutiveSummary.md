@@ -3,17 +3,15 @@
 ---
 
 ## Executive Summary
-- DevOps Engineer with focus on AWS cloud infrastructure and GitLab, responsible for building new, and optimizing existing cloud resources with <clrog>`Terraform/Terragrunt` and implementing CICD pipelines in <clrog>`GitLab`</clrog></span>. 
+- DevOps Engineer with focus on AWS cloud infrastructure and GitLab CICD. Responsible for building new and optimizing existing <clrog>GitLab CICD</clrog> templates and cloud resources with <clrog>Terraform/Terragrunt</clrog> and managing cloud infrastructures for applications hosted in AWS EKS along with other AWS technologies.</span>.
 
-- Currently an individual contributor working on AWS, Ansible, GitLab CI Terraform/Terragrunt technology stacks.
+- Currently a contributor in a team of 3 working on AWS, Ansible, GitLab CI Terraform/Terragrunt technology stacks.
 
-- Experience in Scrum and Kanban Agile methodologies, Cloud Security compliances and Cloud operational budgeting for multiple AWS accounts. Also experienced in GitLab CI/CD Pipeline and AWS designs.
+- Experience in Scrum and Kanban Agile methodologies, Cloud Security compliances and Cloud operational budgeting for multiple AWS accounts.
 
 - Practical scripting knowledge in <clrog>`Python`</clrog>, <clrog>`Bash`</clrog> and past development experience in <clrog>`Java 8`</clrog>.
 
 - Proficient in <clrmg>Linux</clrmg> server administration. <clrbl>#iusearchbtw</clrbl>
-
-- Freelance experience as `Microsoft 365` and `Google Workspace` (previously GSuite) setup and administration for small businesses.
 
 
 <style>

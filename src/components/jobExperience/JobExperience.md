@@ -2,18 +2,32 @@
 ---
 
 ## DevOps Engineer | *Jan 2023 - Present*
-### <clrcy>GovTech Singapore, Government Digital Services</clrcy>
--	Part of a DevOps team of 3 providing Business-as-usual (BAU) DevOps Support to the Government Paid Leave Schemes (GPLS) Portal
+### <clrcy>Government Technology Agency</clrcy>
+- Part of the Government Paid Leave Schemes (GPLS) Portal team as an individual contributor
 
-- Spearheading technology stack migration from Atlassian Bitbucket and Bamboo to GitLab.
+- Led migration of CICD workflows from Atlassin BitBucket / Bamboo to GitLab CICD
 
-- Designed, implemented and provided technical documentation for over <clrgn>30</clrgn> reusable GitLab job templates for jobs across all stages
+- Architected and implemented full-fledged CICD templates and pipelines in GitLab for EKS based microservices and EC2 services, creating a workflow from source to deploy via `Helm`, `Kubectl` and `Ansible`.
 
-- Designed and implemented CI/CD pipelines for JavaScript (Yarn) and Kotlin (Gradle) based microservices from source to deploy.
+- Authored technical documentation for CICD templates and workflows
 
-- Created CI/CD automation pipelines based on existing Ansible playbooks, reducing manual developer work. 
+- Initiated and co-hosted sharing sessions on CICD templates within and across projects
 
-- Conducted hiring interviews for potential candidates
+- Migration of ~300 legacy vanilla Terraform resources to Terragrunt wrapper, along with creation of new Terraform modules
+
+- Championed major AWS RDS version upgrades, including drafting of technical runbook to be used by members of the team and rollout scheduling
+
+- Performed upgrading of `AWS EKS` clusters, inclusive of schedule planning, communication with team, technical runbooks
+
+- Led initiative to improve team’s operational processes by introducing formal multiple playbooks, enforcing clear code review processes with templates to improve traceability and accountability of work
+
+- Initiated tracking sheet and provided initial analysis on cloud infrastructure security findings based on security reports
+
+- Part of operations support to provide BAU support, inclusive of OS patching via AMI refreshes, COTS software upgrades via automation and production DevOps support.
+
+- Prepared technical challenges and conducted technical interviews for potential candidates
+
+- Provided training and guidance to new and existing colleagues in DevOps / automation technologies.
 
 ----
 
