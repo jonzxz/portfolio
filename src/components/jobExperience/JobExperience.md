@@ -7,17 +7,17 @@
 
 - Led migration of CICD workflows from Atlassin BitBucket / Bamboo to GitLab CICD
 
-- Architected and implemented full-fledged CICD templates and pipelines in GitLab for EKS based microservices and EC2 services, creating a workflow from source to deploy via `Helm`, `Kubectl` and `Ansible`.
+- Architected and implemented full-fledged CICD templates and pipelines in GitLab for EKS based microservices and EC2 services, creating a workflow from source to deploy via `Helm`, `Kubectl` and `Ansible`
 
 - Authored technical documentation for CICD templates and workflows
 
 - Initiated and co-hosted sharing sessions on CICD templates within and across projects
 
-- Migration of ~300 legacy vanilla Terraform resources to Terragrunt wrapper, along with creation of new Terraform modules
+- Migration of approximately 300 legacy vanilla Terraform resources to Terragrunt wrapper, along with creation of new Terraform modules
 
-- Championed major AWS RDS version upgrades, including drafting of technical runbook to be used by members of the team and rollout scheduling
+- Championed major AWS RDS version upgrades, including drafting of technical runbook to be used by members of the team and scheduling rollouts
 
-- Performed upgrading of `AWS EKS` clusters, inclusive of schedule planning, communication with team, technical runbooks
+- Performed upgrading of multiple `AWS EKS` clusters, inclusive of schedule planning, communication with team, runbooks and execution
 
 - Led initiative to improve team’s operational processes by introducing formal multiple playbooks, enforcing clear code review processes with templates to improve traceability and accountability of work
 
@@ -25,7 +25,7 @@
 
 - Part of operations support to provide BAU support, inclusive of OS patching via AMI refreshes, COTS software upgrades via automation and production DevOps support.
 
-- Prepared technical challenges and conducted technical interviews for potential candidates
+- Authored technical challenges and conducted technical interviews for potential candidates
 
 - Provided training and guidance to new and existing colleagues in DevOps / automation technologies.
 
@@ -69,13 +69,13 @@
 
 -	Redesigning of AWS `Security Groups` using `Terraform` modules to introduce security segregation of outbound connectivity
 
--	Executing estate-wide deployments in for over 80 servers in UAT and Production environments
+-	Executing estate-wide deployments for over 80 EC2 servers in UAT and Production environments
 
 -	Security and compliance fixes for AWS resources based on AWS `Security Hub` and internal compliance directives
 
 -	Created AWS `Session Manager` (SSM) automation for refreshing AWS `Simple Email Service` (SES) SMTP credentials for servers utilizing Postfix relay design
 
--	Designed and implemented weekly scheduled pipeline to build custom `EC2 AMIs` for applications using Gitlab CI and `Hashicorp Packer`
+-	Designed and implemented weekly scheduled pipeline to build custom `EC2 AMIs` for applications using GitLab CI and `Hashicorp Packer`
 
 -	Developed automation in `Lambda` to identify and update AWS `Auto Scaling Groups` with updated `AMIs` built by scheduled pipelines
 
