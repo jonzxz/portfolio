@@ -43,4 +43,4 @@ plan:
 	terraform plan
 
 deploy:
-	terraform apply
+	cd terraform/jonathankerk.com && terraform apply
