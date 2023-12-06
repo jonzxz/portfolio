@@ -29,7 +29,7 @@ Some potential future improvements including:
 
 Code is hosted on 2 AWS S3 buckets with static site hosting enabled. Code is packed with `npm run build` and uploaded to S3.
 
-The Terraform version used here is `v1.3.3`, and the AWS Provider is pinned to `4.36.1`.
+The Terraform version used here is `v1.6.5`, and the AWS Provider is pinned to `5.29.0`.
 
 Terraform code can be found in `terraform/*`
 
