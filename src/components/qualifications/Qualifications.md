@@ -21,6 +21,11 @@
 
   - Verification: [<clrbl>Credly](https://www.credly.com/badges/e85f7188-7eef-4c75-b3a6-0093eba0e49f)
 
+### <clrmgt>Hashicorp</clrmgt>
+- Terraform Associate (003) | *Issued Dec 2023*
+
+  - Verification: [<clrbl>Credly](https://www.credly.com/badges/815d4109-ef08-4d64-8b7a-4455fb0fda6a)
+
 
 <style>
 /* @group Block Quotes */
@@ -92,5 +97,9 @@ clrmg {
 
 clrcy {
 	color: #42b3c2;
+}
+
+clrmgt {
+  color: #7b42bc;
 }
 </style>

@@ -5,6 +5,7 @@ import {useReducer} from  'react'
 
 const TabBar = (props) => {
   let items = props.currentTabs
+  // eslint-disable-next-line
   const [ignored, forceUpdate] = useReducer(x => x + 1, 0);
 
   const populateTabBar = () => {
@@ -15,7 +16,7 @@ const TabBar = (props) => {
   
     const handleClose = (item) => {
       for (let i = 0; i < props.currentTabs.length;  i++) {
-        if (props.currentTabs[i] == item) {
+        if (props.currentTabs[i] === item) {
           props.currentTabs.splice(i, 1)
           props.setCurrentTabs(props.currentTabs)
           if (props.currentTabs.length > 0) {

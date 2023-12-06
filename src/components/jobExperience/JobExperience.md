@@ -29,6 +29,8 @@
 
 - Provided training and guidance to new and existing colleagues in DevOps / automation technologies.
 
+- Setting up of new tools such as Prometheus, Grafana, ExternalDNS in AWS EKS using Helm charts
+
 ----
 
 ## DevOps Engineer | *Jul 2022 – Jan 2023*
