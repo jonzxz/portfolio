@@ -36,11 +36,11 @@ update:
 start:
 	npm start
 
-build:
+build-src:
 	npm run build
 
 plan:
-	terraform plan
+	cd terraform/jonathankerk.com && terraform plan
 
 deploy:
 	cd terraform/jonathankerk.com && terraform apply
