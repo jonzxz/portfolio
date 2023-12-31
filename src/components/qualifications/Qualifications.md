@@ -15,7 +15,7 @@
 
 ---
 
-## Qualifications
+## Certifications
 ### <clrog>Amazon Web Services</clrog>  
 - Solutions Architect (Associate) | *Issued May 2022*
 
@@ -26,6 +26,10 @@
 
   - Verification: [<clrbl>Credly](https://www.credly.com/badges/815d4109-ef08-4d64-8b7a-4455fb0fda6a)
 
+### <clrbl>Scrum Alliance</clrbl>
+- ScrumMaster | *Issued Dec 2023*
+
+  - Verification: [<clrbl>BadgeCert](https://bcert.me/bc/html/show-badge.html?b=hcqupjmu)
 
 <style>
 /* @group Block Quotes */
